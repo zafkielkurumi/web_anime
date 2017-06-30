@@ -1,0 +1,15 @@
+<ion-header-bar align-title="center" class="bar-positive">
+    <div class="title">
+        <a href="javascript:history.go(-1)" class="ion-ios-arrow-left lf-arrow"></a>
+        <a href="#/news">新闻</a>
+    </div>
+</ion-header-bar>
+<ion-content class="has-footer has-header">
+    <div class="card">
+        <div class="item item-body">
+            <h3>{{list.name}}</h3>
+            <img ng-src="{{list.pic}}" width="100%"/>
+            <div id="content"></div>
+        </div>
+    </div>
+</ion-content>

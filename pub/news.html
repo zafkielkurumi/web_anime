@@ -1,0 +1,19 @@
+<ion-header-bar align-title="center" class="bar-positive">
+    <h1 class="title">新闻</h1>
+</ion-header-bar>
+<ion-content class="body">
+    <div class="list list-inset">
+        <a class="item item-thumbnail-left" ng-repeat="obj in list track by $index" href="#/news/{{obj.id}}">
+            <img ng-src="{{obj.pic}}" alt=""/>
+           <div class="rt">
+               <h2>{{obj.name}}</h2>
+               <p>{{obj.title}}</p>
+           </div>
+            <!--<i class="divider"></i>-->
+            <!--<p>{{value.price | currency:'￥'}}</p>-->
+        </a>
+        <div class="item" ng-show="!show">没有更多数据了</div>
+    </div>
+    <ion-infinite-scroll on-infinite="moreContent()" ng-if="show"></ion-infinite-scroll>
+</ion-content>
+<!--<div ng-include="'pub/foot.html'"></div>-->

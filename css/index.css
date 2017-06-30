@@ -1,0 +1,75 @@
+.body{
+    padding-bottom: 50px;
+}
+a{
+    text-decoration: none;
+}
+.rt{
+    padding-top: 20px;
+}
+/*头部*/
+.title a{
+    display: inline-block;
+    height: 100%;
+    padding: 0 10px;
+}
+.bar{
+    height: 42px;
+}
+.title a.active{
+    background: #ffffff;
+    color: blue;
+}
+/*列表页*/
+.responese-img{
+    width: 100%;
+}
+.slider img{
+    height: 150px;
+}
+/*详情页箭头*/
+.lf-arrow{
+    position: absolute;
+    left: 10px;
+    padding:0 10px;
+}
+.body{
+    padding: 0 10px;
+}
+.body img{
+    border-radius: 5px;
+}
+#content img{
+    max-width: 100%;
+}
+/*.body h3{*/
+    /*text-align: center;*/
+/*}*/
+.body p{
+    padding: 5px;
+}
+/*个人中心*/
+.my{
+    background: url("../images/background/body_bg_5.jpg") no-repeat;
+    width: 100%;
+    height: 258px;
+    background-size: cover;
+    position: relative;
+    box-shadow: 0 0 100px 2px #82B865 inset;
+}
+.my a{
+    position: absolute;
+    display: block;
+    width: 75px;height:75px;
+    left: 50%;top:50%;
+    transform: translate(-50%,-50%);
+
+}
+.my a img{
+    width: 100%;height: 100%;
+    border-radius:50%;
+}
+/*.tabs-striped.tabs-positive .tab-item.tab-item-active{*/
+    /*color:red;*/
+    /*border-color: red;*/
+/*}*/

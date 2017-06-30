@@ -1,0 +1,36 @@
+<ion-header-bar align-title="center" class="bar-positive">
+    <h1 class="title">动漫</h1>
+</ion-header-bar>
+<ion-content class="body">
+    <ion-slide-box does-continue="true" slide-interval="3000" auto-play="true">
+        <ion-slide >
+            <div>
+                <img src="images/comic/3.jpg" class="responese-img"/>
+            </div>
+        </ion-slide>
+        <ion-slide>
+            <div>
+                <img src="images/comic/4.jpg" class="responese-img"/>
+            </div>
+        </ion-slide>
+        <ion-slide>
+            <div>
+                <img src="images/comic/5.jpg" class="responese-img"/>
+            </div>
+        </ion-slide>
+    </ion-slide-box>
+    <div class="list list-inset">
+        <a class="item item-thumbnail-left" ng-repeat="obj in list track by $index" ng-href="#/comic/{{obj.id}}">
+            <img ng-src="{{obj.pic}}"/>
+           <div class="rt">
+               <h2>{{obj.name}}</h2>
+               <p>{{obj.title}}</p>
+           </div>
+            <!--<i class="divider"></i>-->
+            <!--<p>{{value.price | currency:'￥'}}</p>-->
+        </a>
+        <div class="item" ng-show="!show">没有更多数据了</div>
+    </div>
+    <ion-infinite-scroll on-infinite="moreContent()" ng-if="show"></ion-infinite-scroll>
+</ion-content>
+<!--<div ng-include="'pub/foot.html'"></div>-->
